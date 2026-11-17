@@ -53,16 +53,6 @@
             <section id="produtos">
                 <h2>Nossos Produtos</h2>
 
-                <div class="pilha" id="pilha">
-                <img src="1.jpeg" alt="Imagem 1">
-                <img src="2.jpeg" alt="Imagem 2">
-                <img src="3.jpeg" alt="Imagem 3">
-                <img src="4.jpeg" alt="Imagem 4">
-                <img src="5.jpeg" alt="Imagem 5">
-                <img src="6.jpeg" alt="Imagem 6">
-                <img src="7.jpeg" alt="Imagem 7">
-                </div>
-
                 <div class="produto-item">
                     <h3>Desenvolvimento de Sites</h3>
                     <p>Criação de sites modernos, responsivos e personalizados para empresas e negócios.</p>
@@ -87,22 +77,6 @@
             </section>
         </main>
 
-        <script>
-const imagens = document.querySelectorAll(".pilha img");
-
-imagens.forEach((imagem) => {
-    imagem.addEventListener("click", () => {
-
-        const ultima = imagens[imagens.length - 1];
-
-        if (imagem === ultima) {
-            imagens.forEach((img, index) => {
-                img.style.transform = `translateY(${index * 8}px)`;
-            });
-        }
-    });
-});
-</script>
 
     </div>
 
