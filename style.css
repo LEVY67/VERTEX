@@ -1,42 +1,58 @@
-body{
-    display: grid; 
-    grid-template-areas:
-    "header header"
-    "aside main"
-    "footer footer";
-    grid-template-columns: 260px 1fr;
-    gap: 20px;
-    font-family: 'Poppins' , sans-serif;
-    margin: 0;
-    padding: 20px;
-    background-color: darkgoldenrod;
-}
 
-header{
-    grid-area: header;
-}
+/* GALERIA - PILHA DE IMAGENS VERTEX */
 
-aside{
-    grid-area: aside;
-    background-color: goldenrod;
-    padding: 15px;
-    border-radius: 8px;
-    border: 1px solid;
-}
-
-main{
-    grid-area: main;
-    background-color: burlywood;
-    padding: 15px;
-    border-radius: 8px;
-    border: 1px solid 
-}
-
-footer{
-    grid-area: footer;
+#galeria {
     text-align: center;
-    padding: 15px;
-    background-color: darkgoldenrod;
-    margin-top: 20px;
+    padding: 40px 20px;
 }
 
+.pilha {
+    position: relative;
+    width: 300px;
+    height: 380px;
+    margin: 40px auto;
+}
+
+.pilha img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+    cursor: pointer;
+    border: 2px solid #29abe2;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease;
+}
+
+/* Espaçamento entre as imagens */
+
+.pilha img:nth-child(1) {
+    transform: translateY(0px);
+}
+
+.pilha img:nth-child(2) {
+    transform: translateY(8px);
+}
+
+.pilha img:nth-child(3) {
+    transform: translateY(16px);
+}
+
+.pilha img:nth-child(4) {
+    transform: translateY(24px);
+}
+
+.pilha img:nth-child(5) {
+    transform: translateY(32px);
+}
+
+.pilha img:nth-child(6) {
+    transform: translateY(40px);
+}
+
+.pilha img:nth-child(7) {
+    transform: translateY(48px);
+}

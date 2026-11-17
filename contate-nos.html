@@ -1,50 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-<header>
+<html lang="pt-BR">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contatos - Vertex Software</title>
+    <!-- Reutiliza o mesmo CSS externo -->
     <link rel="stylesheet" href="style.css">
-</header>
+</head>
+<body>
 
-<body
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Nossos Contatos</h1>
+    </header>
 
-    <center><h1>Contate-nos</h1></center>
-    
-     <label>Nome:</label>      
-        <input type="text" name="nome">
+    <!-- Navegação Superior -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Pagina Inicial</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="index.html#produtos">Nossos Produtos</a></li>
+            <li><a href="contatos.html">Contatos</a></li>
+        </ul>
+    </nav>
 
-        <br><br>
+    <!-- Container principal para alinhar Aside e Main lado a lado -->
+    <div class="container">
+        
+        <!-- Menu Lateral -->
+        <aside>
+            <h2>Menu Lateral</h2>
+            <ul>
+                <li><a href="index.html">Pagina Inicial</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="index.html#produtos">Nossos Produtos</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
+        </aside>
 
-        <label>Email:</label>
-        <input type="email" name="email">
+        <!-- Conteúdo Principal da página Contatos -->
+        <main>
+            <section id="fale-conosco">
+                <h2>Fale Conosco</h2>
+                <p>
+                    Tem alguma dúvida, projeto em mente ou deseja saber mais sobre nossas soluções? Entre em contato conosco através dos canais abaixo ou preencha o formulário.
+                </p>
+            </section>
 
-        <br><br>
+            <section id="canais-contato">
+                <h2>Canais de Atendimento</h2>
 
-        <label>Idade:</label>
-        <input type="number" name="idade">
+                <div class="produto-item">
+                    <h3>E-mail</h3>
+                    <p>contato@vertexsoftware.com.br</p>
+                </div>
 
-        <br><br>
+                <div class="produto-item">
+                    <h3>Telefone / WhatsApp</h3>
+                    <p>(85) 99999-9999</p>
+                </div>
 
-        <label>Curso:</label>
-        <select name="curso">
-            <option>Informática</option>
-            <option>Programação</option>
-            <option>Redes</option>
-        </select>
+                <div class="produto-item">
+                    <h3>Endereço</h3>
+                    <p>Av. da Inovação, 1000 - Sala 402 - Fortaleza / CE</p>
+                </div>
+            </section>
+        </main>
 
-        <br><br>
+    </div>
 
-        <label>Mensagem:</label><br>
-        <textarea name="mensagem"></textarea>
+    <!-- Rodapé -->
+    <footer id="contatos">
+        <p>© 2026 Vertex Software - Todos os direitos reservados.</p>
+    </footer>
 
-        <br><br>                                
-        <button type="submit">Enviar</button> 
-        <footer>
-            <p>© 2024 SARTOCLUB. Todos os direitos reservados.</p>
-        </footer>
-
-        <h1><a href="index.html">inicio</a></h1>   <center><img src="goku.jpg" width="800" height="600"></center>
-        <h1><a href= "https://www.Sartoclub.com">www.sartoclub.com</a></h1>
 </body>
 </html>

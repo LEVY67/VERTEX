@@ -1,55 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
-<header>
+<html lang="pt-BR">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
- 
-</header>
+    <!-- Ligação com o arquivo CSS externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-    <style>
-        body{
-            background-color: burlywood;
-        }
-    </style>
-    
-   <nav><center><h1 style="color:gold;">SARTOCLUB </h1></center></nav>
-    <h2 style="color: gold;">Bem-vindo ao SARTOCLUB</h2
-       
 
-    <em>SARTOCLUB é uma plataforma inovadora que conecta clientes a serviços de costura de alta qualidade. Nossa missão é oferecer soluções de alta qualidade para atender às necessidades individuais de cada cliente, garantindo satisfação e excelência em cada projeto.</em>
-    <p>
-    </p>
-    <main>
-    <em>Navegue pelo nosso site para conhecer mais sobre nossos produtos, contratar nossos serviços, conhecer nossos parceiros e conferir nosso portfólio de trabalhos realizados.</em>
-    </main>
-     <p>
-    <br>
-    <hr>
-    <strong><h2 style="color: gold;" sobre o SARTOCLUB></h2></strong>
-    <p>
-    <hr>
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Nossos Contatos</h1>
+    </header>
+
+    <!-- Navegação Superior -->
     <nav>
         <ul>
-            <li><a style="color:coral;"Href="sobre.html">Sobre</a></li>
-            <li><a style="color:coral;"href="produtos.html">Produtos</a></li>
-            <li><a style="color:coral;"href="parceiros.html">Parceiros</a></li>
-            <li><a style="color:coral;"href="portifoĺio.html">Portfólio</a></li>
-            <li><a style="color:coral;"href="contate-nos.html">Contate-nos</a></li>
-            <li><a style="color:coral;"href="ouvidoria.html">Ouvidoria</a></li>
+            <li><a href="index.html">Pagina Inicial</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="produtos.html">Nossos Produtos</a></li>
+            <li><a href="contate-nos.html">Contatos</a></li>
         </ul>
     </nav>
-    <p>
-    <br>
-    <hr>
-    <aside>
-    <strong><h2 style="color: gold;" Missão e Valores></h2></strong>
-    </aside>
-    <p>A missão do SartoClub é oferecer soluções de alta qualidade para atender às necessidades individuais de cada cliente, garantindo satisfação e excelência em cada projeto. Nossos valores incluem compromisso com a qualidade, inovação, ética e responsabilidade social. Buscamos constantemente aprimorar nossos serviços e produtos.</p>
-    <p> 
-        <footer>
-            <p>© 2024 SARTOCLUB. Todos os direitos reservados.</p>
-        </footer>                               
-            <center><img src="Negona.jpg"  width="1100" height="600" style="border-radius: 100%;" ></center>
-    <body>               
+
+    <!-- Container principal para alinhar Aside e Main lado a lado -->
+    <div class="container">
+        
+        <!-- Menu Lateral -->
+        <aside>
+            <h2>Menu Lateral</h2>
+            <ul>
+                <li><a href="index.html">Pagina Inicial</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="produtos.html">Nossos Produtos</a></li>
+                <li><a href="contate-nos.html">Contatos</a></li>
+            </ul>
+        </aside>
+
+        <!-- Conteúdo Principal -->
+        <main>
+            <section id="sobre">
+                <h2>Sobre a Vertex Software</h2>
+                <p>
+                    A Vertex Software é uma empresa de tecnologia dedicada ao desenvolvimento de soluções digitais inovadoras. Nosso objetivo é transformar ideias em ferramentas eficientes, oferecendo tecnologia de ponta e excelência para nossos clientes.
+                </p>
+                <p>
+                    Acreditamos que a inovação é o caminho para o futuro e trabalhamos para conectar pessoas, empresas e oportunidades por meio da tecnologia.
+                </p>
+            </section>
+
+            <section id="produtos">
+                <h2>Nossos Produtos</h2>
+
+                <div class="pilha" id="pilha">
+                <img src="1.jpeg" alt="Imagem 1">
+                <img src="2.jpeg" alt="Imagem 2">
+                <img src="3.jpeg" alt="Imagem 3">
+                <img src="4.jpeg" alt="Imagem 4">
+                <img src="5.jpeg" alt="Imagem 5">
+                <img src="6.jpeg" alt="Imagem 6">
+                <img src="7.jpeg" alt="Imagem 7">
+                </div>
+
+                <div class="produto-item">
+                    <h3>Desenvolvimento de Sites</h3>
+                    <p>Criação de sites modernos, responsivos e personalizados para empresas e negócios.</p>
+                </div>
+
+                <div class="produto-item">
+                    <h3>Sistemas Empresariais</h3>
+                    <p>Desenvolvimento de sistemas para organizar processos, administrar informações e aumentar a produtividade.</p>
+                </div>
+
+                <div class="produto-item">
+                    <h3>Aplicações Digitais</h3>
+                    <p>Criação de aplicações que facilitam tarefas e proporcionam melhores experiências aos usuários.</p>
+                </div>
+            </section>
+
+            <section id="parceiros">
+                <h2>Nossos Parceiros</h2>
+                <p>
+                    A Vertex Software acredita que grandes resultados são construídos por meio de parcerias. Trabalhamos em conjunto com profissionais e empresas que compartilham nossos valores de inovação e qualidade.
+                </p>
+            </section>
+        </main>
+
+        <script>
+const imagens = document.querySelectorAll(".pilha img");
+
+imagens.forEach((imagem) => {
+    imagem.addEventListener("click", () => {
+
+        const ultima = imagens[imagens.length - 1];
+
+        if (imagem === ultima) {
+            imagens.forEach((img, index) => {
+                img.style.transform = `translateY(${index * 8}px)`;
+            });
+        }
+    });
+});
+</script>
+
+    </div>
+
+    <!-- Rodapé -->
+    <footer id="contatos">
+        <p>© 2026 Vertex Software - Todos os direitos reservados.</p>
+    </footer>
+
+</body>
 </html>
